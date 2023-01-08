@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+/* || Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2ebe3;
+}
+
+.container {
+    width: 350px;
+    height: 600px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0 0 15px 15px;
+
+
+}
+
+.product-image {
+    width: 100%;
+    height: 40%;
+
+}
+
+.product-image>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-details {
+    /* border: 2px solid yellow; */
+    margin-top: 10px;
+    height: 60%;
+    width: 100%;
+
+}
+
+.product-details>.perfume {
+    color: #6c7289;
+    /* margin-top: 15px; */
+    padding: 0 15px;
+    letter-spacing: 5px;
+
+}
+
+.product-details>h1 {
+    padding: 10px;
+}
+
+.product-details>p {
+    color: #6c7289;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+
+.price-tag {
+    display: flex;
+    padding: 0 15px;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.price-tag>.discount {
+    font-size: 32px;
+    color: #3c8067;
+    font-weight: 700;
+}
+
+.price-tag>.no-discount {
+    text-decoration: line-through;
+    color: #6c7289;
+
+}
+
+button {
+
+    background-color: #3c8067;
+    border: none;
+    color: #fff;
+    padding: 15px 110px;
+    margin-left: 20px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+
+
+}
+
+
+/*|| Big screen  */
+
+@media screen and (min-width: 576px) {
+    .container {
+        width: 650px;
+        height: 450px;
+        display: flex;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .product-image {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .product-image > img {
+        border-radius: 10px 0 0 10px;
+        
+    }
+
+    .product-details {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    button {
+        padding: 15px 60px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
